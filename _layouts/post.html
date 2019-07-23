@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          {% include navigation-header.html %}
+        </nav>
+      </header>
+      <section id="post">
+        <div class="post__info">
+          {{ page.title }}
+          {{ page.size }}
+        </div>
+        {{ content }}
+      </section>
+      <footer>
+        {% include navigation-footer.html %}
+      </footer>
+    </main>
+
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/assets/js/jquery.mousewheel.min.js"
+    ></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

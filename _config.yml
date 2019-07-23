@@ -1,0 +1,5 @@
+collections:
+  body:
+    output: true
+    future: true
+    permalink: /:name
