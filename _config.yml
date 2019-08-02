@@ -1,7 +1,7 @@
+baseurl: /cath-portfolio
+
 collections:
   body:
     output: true
     future: true
     permalink: /:name
-
-  baseurl: /cath-portfolio
