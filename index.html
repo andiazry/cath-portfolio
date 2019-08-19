@@ -4,9 +4,11 @@ title: Cathleen Clarke
 ---
 
 <ul>
-  {% for post in site.posts %} {% if post.name contains "2019" %}
-  <li>
-    <a href="{{ post.url }}"><img src="{{ post.img }}" alt=""/></a>
-  </li>
-  {% endif %} {% endfor %}
+  {% for post in site.posts %}
+    {% if post.name contains "2019" %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl }}{{ post.img }}" alt=""/></a>
+      </li>
+    {% endif %}
+  {% endfor %}
 </ul>
