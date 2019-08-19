@@ -1,10 +1,10 @@
 <nav class="nav__footer">
-    {% for item in site.body reversed %}
-    <a href="{{ item.url }}" {% if page.name == item.link %} class="current"{% endif %}>{{ item.name }}</a>
-    {% endfor %}
-  </nav>
-  
-  <!-- <ul>
+  {% for item in site.body reversed %}
+    <a href="{{ site.baseurl }}{{ item.url }}" {% if page.name == item.link %} class="current" {% endif %}>{{ item.name }}</a>
+  {% endfor %}
+</nav>
+
+<!-- <ul>
       {% for item in site.body reversed %}
       <li>
         <h2>
