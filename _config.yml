@@ -1,7 +1,16 @@
-baseurl: /cath-portfolio
-
+---
+title: Cath Portfolio
+timezone: UTC
 collections:
   body:
+    title: Body
     output: true
+    permalink: "/:name"
     future: true
-    permalink: /:name
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+baseurl: "/cath-portfolio"
