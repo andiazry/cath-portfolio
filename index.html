@@ -5,7 +5,8 @@ layout: default
 
 <ul>
   {% for post in site.posts %}
-    {% if post.name contains "2019" %}
+    <!-- {% if post.name contains "2019" %} -->
+    {% if post.img %}
       <li>
         <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl }}{{ post.img }}" alt=""/></a>
       </li>
