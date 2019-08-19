@@ -1,4 +1,4 @@
-# baseurl: /cath-portfolio
+baseurl: /cath-portfolio
 
 collections:
   body:
